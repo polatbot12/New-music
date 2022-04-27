@@ -36,23 +36,23 @@ module.exports = {
             )
             .setColor(config.colors.yes)
             .addFields({
-                    name: '<a:CLEVER:828550389233090571> BOT TAG',
+                    name: 'BOT TAG',
                     value: `**\`${client.user.tag}\`**`,
                     inline: true,
                 }, {
-                    name: '<a:CLEVER:828550389233090571> BOT VERSION',
+                    name: 'BOT VERSION',
                     value: `**\`7.0.0\`**`,
                     inline: true,
                 }, {
-                    name: '<a:CLEVER:828550389233090571> DISCORD.JS VERSION',
+                    name: 'DISCORD.JS VERSION',
                     value: `**\`${version}\`**`,
                     inline: true,
                 }, {
-                    name: '<a:CLEVER:828550389233090571> UPTIME',
+                    name: 'UPTIME',
                     value: `**\`${days}d\` \`${hours}h\` \`${minutes}m\` \`${seconds}s\`**`,
                     inline: true,
                 }, {
-                    name: '<a:CLEVER:828550389233090571> PING',
+                    name: 'PING',
                     value: `**\`${client.ws.ping} ms\`**`,
                     inline: true,
                 }, {
@@ -60,15 +60,15 @@ module.exports = {
                     value: `\u200b`,
                     inline: true,
                 }, {
-                    name: '<a:CLEVER:828550389233090571> Server count',
+                    name: 'Server count',
                     value: `**\`${client.guilds.cache.size}\`**`,
                     inline: true,
                 }, {
-                    name: '<a:CLEVER:828550389233090571> Total members',
+                    name: 'Total members',
                     value: `**\`${totalMembers}\`**`,
                     inline: true,
                 }, {
-                    name: '<a:CLEVER:828550389233090571> Commands Amount',
+                    name: 'Commands Amount',
                     value: `**\`${client.commands.map(cmd => cmd.name).length}\`**`,
                     inline: true,
                 }, {
@@ -76,27 +76,27 @@ module.exports = {
                     value: `\u200b`,
                     inline: false,
                 }, {
-                    name: "<a:CLEVER:828550389233090571> SERVER PREFIX",
+                    name: "SERVER PREFIX",
                     value: `**\`${prefix}\`**`,
                     inline: true,
                 }, {
-                    name: "<a:CLEVER:828550389233090571> BOT CHANNELS",
+                    name: "BOT CHANNELS",
                     value: `**${boch}**`,
                     inline: true,
                 }, {
-                    name: "<a:CLEVER:828550389233090571> DJ-ROLES",
+                    name: "DJ-ROLES",
                     value: `**${djs}**`,
                     inline: true,
                 }, {
-                    name: "<a:CLEVER:828550389233090571> Amount of Commands used",
+                    name: "Amount of Commands used",
                     value: `**\`${client.infos.get("global", "cmds")}\`**`,
                     inline: true,
                 }, {
-                    name: "<a:CLEVER:828550389233090571> Amount of Songs played",
+                    name: "Amount of Songs played",
                     value: `**\`${client.infos.get("global", "songs")}\`**`,
                     inline: true,
                 }, {
-                    name: "<a:CLEVER:828550389233090571> Amount of Filter added",
+                    name: "Amount of Filter added",
                     value: `**\`${client.infos.get("global", "filters")}\`**`,
                     inline: true,
                 },
@@ -107,11 +107,11 @@ module.exports = {
     `)
 
             .addField("***FOUNDER:***", `
-    >>> <@828550389233090571> 
+    >>> <@669072128922091541> 
     `)
    
         .addField("***SUPPORT***", `
- >>> [\`Server\`](https://discord.gg/wCsGaASBVn) | [\`Invite\`](https://discord.com/oauth2/authorize?client_id=911935319375499284&permissions=70282305&scope=bot) 
+ >>> [\`Server\`](https://discord.gg/ttx9b2YcaP) | [\`Invite\`]() 
     `)
         message.channel.send(embed)
     }
