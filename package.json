@@ -1,8 +1,8 @@
 {
   "name": "musicium",
   "version": "7.0.0",
-  "description": "The Ultimate MUSIC BOT",
-  "main": "index.js",
+  "description": "The New MUSIC BOT",
+  "main": "polat.js",
   "dependencies": {
     "@discordjs/opus": "^0.3.3",
     "@ksoft/api": "^3.1.9",
@@ -61,7 +61,7 @@
     "gaming",
     "utility"
   ],
-  "author": "Tomato#6966",
+  "author": "POLAT BOT",
   "license": "GPL-3.0",
   "bugs": {
     "url": "https://github.com/Tomato6966/Musicium/issues"
