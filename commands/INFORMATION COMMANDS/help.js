@@ -44,7 +44,7 @@ module.exports = {
                 .reduce((string, category) => string + "\n\n" + category);
 
             message.channel.send(embed1)
-            return message.channel.send(embed.setDescription("*use the Prefix infront of EACH command, to use it correctly!*\n" + info));
+            return message.channel.send(embed.setDescription("*use the Prefix infront of Music command, to use it correctly!*\n" + info));
         }
 
         function getCMD(client, message, input) {
