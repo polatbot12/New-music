@@ -10,8 +10,8 @@ module.exports = {
         let inviteembed = new Discord.MessageEmbed()
             .setColor(config.colors.yes)
             .setTitle("Invite, MUSIC")
-            .setDescription("**[ Invite Me Now , thanks](https://discord.com/oauth2/authorize?client_id=911935319375499284&permissions=70282305&scope=bot)** ")
-            .setFooter("Best Music Bot", client.user.displayAvatarURL())
+            .setDescription("**[ Invite Me Now , thanks]()** ")
+            .setFooter("New Music Bot", client.user.displayAvatarURL())
 
         message.reply(inviteembed);
     }
