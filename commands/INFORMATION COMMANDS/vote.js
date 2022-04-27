@@ -12,7 +12,7 @@ module.exports = {
             .setColor(config.colors.yes)
             .setFooter(client.user.username, client.user.displayAvatarURL())
             .setTitle("Vote for MUSIC")
-            .setURL("https://top.gg/bot/911935319375499284/analytics")
+            .setURL("")
             .setDescription(``)
         )
     }
