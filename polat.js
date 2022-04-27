@@ -2,7 +2,7 @@
 /////////////////////////////////////
 const config = require("./config.json");
 /////////////////////////////////////
-//BOT CODED BY: Tomato#6966//////////
+//BOT CODED BY: POLAT//////////
 //DO NOT SHARE WITHOUT CREDITS!//////
 /////////////////////////////////////
 const {
@@ -57,7 +57,7 @@ client.categories = fs.readdirSync("./commands/");
     require(`./handlers/${handler}`)(client);
 });
 require("./handlers/slashcommands")(client);
-//BOT CODED BY: Tomato#6966
+//BOT CODED BY: POLAT
 //DO NOT SHARE WITHOUT CREDITS!
 require("./handlers/setups")(client)
 const functions = require("./functions")
@@ -155,7 +155,7 @@ client.on("message", async message => {
 
         client.infos.set("global", Number(client.infos.get("global", "cmds")) + 1, "cmds");
 
-        message.react("<a:CLEVER:828550389233090571>").catch(e => console.log("COULD NOT REACT F"))
+        message.react("").catch(e => console.log("COULD NOT REACT F"))
 
         try {
             command.run(client, message, args);
@@ -172,7 +172,7 @@ client.login(config.token);
 
 
 
-//BOT CODED BY: Tomato#6966
+//BOT CODED BY: POLAT
 //DO NOT SHARE WITHOUT CREDITS!
 process.on('unhandledRejection', (reason, p) => {
     console.log('=== unhandled Rejection ==='.toUpperCase());
@@ -184,7 +184,7 @@ process.on('uncaughtExceptionMonitor', (err, origin) => {
     console.log('=== uncaught Exception Monitor ==='.toUpperCase());
 });
 
-//BOT CODED BY: Tomato#6966
+//BOT CODED BY: POLAT
 //DO NOT SHARE WITHOUT CREDITS!
 process.on('beforeExit', (code) => {
     console.log('=== before Exit ==='.toUpperCase());
