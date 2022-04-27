@@ -17,7 +17,7 @@ module.exports = {
 				
 				
 				.setDescription(`
-**[ Link Server ](https://discord.gg/wCsGaASBVn)**
+**[ Link Server ](https://discord.gg/ttx9b2YcaP)**
 			
 `)
 			)
@@ -28,7 +28,7 @@ module.exports = {
 		    Second Sponsor of This Bot is:
 		    **MC-HOST24** THE BEST MC HOSTER
 		    > MC-HOST24.de is sponsoring them with some monthly Money,
-		    > Thanks to them, they able to host their Website and GAME SERVERS
+		    > Thanks to them,
 		    > Our suggestion is, if you want to host games / Websites, then go to [mc-host24.de](https://mc-host24.de/user/affiliate/3121)
 		    **What they are offering:**
 		    > **>>** Minecraft Hosting, CounterStrike: Global Offensive, Garry's Mod, ARK, ARMA 3, ...
@@ -36,7 +36,7 @@ module.exports = {
 		    > **>>** WEBHOSTING
 		    > **>>** TEAMSPEAK SERVERS
 		    > **>>** Linux & Windows Root Servers
-		    [**Link Server:**](https://discord.gg/wCsGaASBVn)
+		    [**Link Server:**](https://discord.gg/ttx9b2YcaP)
 		   
 		    [**__SPONSOR LINK!__**]()
 		    `)
