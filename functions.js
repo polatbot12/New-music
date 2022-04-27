@@ -194,7 +194,7 @@ async function playsongyes(client, message, queue, song) {
             .addField("↪️ Autoplay:", `>>> ${queue.autoplay ? "✅" : ":x:"}`, true)
             .addField("🎧 Download Song:", `>>> [\`Click here\`](${song.streamURL})`, true)
             .addField("❔ Filter:", `>>> \`${queue.filter || ":x:"}\``, true)
-            .setFooter(client.user.username + " | by: CLEVER", client.user.displayAvatarURL())
+            .setFooter(client.user.username + " | by: POLAT", client.user.displayAvatarURL())
             .setAuthor(message.author.tag, message.member.user.displayAvatarURL({
                 dynamic: true
             }), "")
@@ -240,12 +240,12 @@ async function playsongyes(client, message, queue, song) {
 
             //if not a dj return error
             if (check_if_dj(reaction.message, member))
-                return embedbuilder(client, 6000, message, config.colors.no, "DJ-ROLE", `<a:jano_26:799630865474256972> You don\'t have permission for this Command! You need to have: ${check_if_dj(message)}`)
+                return embedbuilder(client, 6000, message, config.colors.no, "DJ-ROLE", ` You don\'t have permission for this Command! You need to have: ${check_if_dj(message)}`)
 
             switch (reaction.emoji.id || reaction.emoji.name) {
                 case "⏭":
                     client.distube.skip(message);
-                    embedbuilder(client, 3000, message, config.colors.yes, "<a:jano_29:840650829257637900> Skipped", `Skipped the song`)
+                    embedbuilder(client, 3000, message, config.colors.yes, " Skipped", `Skipped the song`)
                     try {
                         playingMessage.reactions.removeAll();
                     } catch {}
@@ -328,17 +328,17 @@ function curembed(client, message) {
         let song = queue.songs[0];
         embed = new Discord.MessageEmbed()
             .setColor(config.colors.yes)
-            .setTitle("<a:CLEVER:828550389233090571> Playing Song:")
+            .setTitle("Playing Song:")
             .setDescription(`> [\`${song.name}\`](${song.url})`)
-            .addField("<a:CLEVER:828550389233090571> Requested by:", `>>> ${song.user}`, true)
-            .addField("<a:CLEVER:828550389233090571> Duration:", `>>> \`${queue.formattedCurrentTime} / ${song.formattedDuration}\``, true)
-            .addField("<a:CLEVER:828550389233090571> Queue:", `>>> \`${queue.songs.length} song(s) - ${queue.formattedDuration}\``, true)
-            .addField("<a:CLEVER:828550389233090571> Volume:", `>>> \`${queue.volume} %\``, true)
-            .addField("<a:CLEVER:828550389233090571> Loop:", `>>> ${queue.repeatMode ? queue.repeatMode === 2 ? "<a:CLEVER:828550389233090571> Queue" : "<a:CLEVER:828550389233090571> Song" : "<a:jano_26:799630865474256972>"}`, true)
-            .addField("<CLEVER:828550389233090571> Autoplay:", `>>> ${queue.autoplay ? "<a:CLEVER:828550389233090571>" : "<a:CLEVER:828550389233090571>"}`, true)
-            .addField("<a:CLEVER:828550389233090571> Filter:", `>>> \`${queue.filter || "<a:CLEVER:828550389233090571>"}\``, true)
-            .addField("<a:CLEVER:828550389233090571> DJ-Role:", `>>> ${djs}`, true)
-            .setFooter(client.user.username + " | by: CLEVER", client.user.displayAvatarURL())
+            .addField("Requested by:", `>>> ${song.user}`, true)
+            .addField("Duration:", `>>> \`${queue.formattedCurrentTime} / ${song.formattedDuration}\``, true)
+            .addField("Queue:", `>>> \`${queue.songs.length} song(s) - ${queue.formattedDuration}\``, true)
+            .addField("Volume:", `>>> \`${queue.volume} %\``, true)
+            .addField("Loop:", `>>> ${queue.repeatMode ? queue.repeatMode === 2 ? "Queue" : "Song" : ""}`, true)
+            .addField("Autoplay:", `>>> ${queue.autoplay ? "" : ""}`, true)
+            .addField("Filter:", `>>> \`${queue.filter || ""}\``, true)
+            .addField("DJ-Role:", `>>> ${djs}`, true)
+            .setFooter(client.user.username + " | by: POLAT", client.user.displayAvatarURL())
             .setAuthor(message.author.tag, message.member.user.displayAvatarURL({
                 dynamic: true
             }), "")
