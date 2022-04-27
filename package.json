@@ -1,5 +1,5 @@
 {
-  "name": "MUSIC BOT",
+  "name": "Music Bot",
   "version": "7.0.0",
   "description": "The New MUSIC BOT",
   "main": "polat.js",
@@ -36,7 +36,7 @@
     "url": "git+https://github.com/polatbot12/New-music"
   },
   "keywords": [
-    "Musicium",
+    "Music Bot",
     "discord",
     "discord-js",
     "discord.js",
