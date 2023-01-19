@@ -1,1 +1,1 @@
-worker: node polat
+worker: node polat.js
